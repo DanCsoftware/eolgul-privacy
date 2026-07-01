@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Eolgul Labs</title>
+<style>
+  :root {
+    --mint: #4ECDC4; --mint-dark: #2AB7AD; --mint-light: #F0FDFB;
+    --bg: #F7F9FA; --card: #FFFFFF; --text: #1A2332; --text-mid: #3D4F63;
+    --text-soft: #8896A6; --border: rgba(0,0,0,0.06);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  .brand { font-size: 13px; font-weight: 700; letter-spacing: 0.5px; color: var(--mint); }
+  h1 { font-size: 30px; font-weight: 700; margin: 6px 0 2px; letter-spacing: -0.3px; }
+  .updated { font-size: 12px; color: var(--text-soft); margin-bottom: 28px; }
+  .principle {
+    background: var(--mint-light); border-radius: 16px; padding: 20px 22px; margin-bottom: 32px;
+  }
+  .principle .label { font-size: 11px; font-weight: 700; letter-spacing: 0.6px; color: var(--mint-dark); margin-bottom: 8px; }
+  .principle p { margin: 0; font-size: 15px; font-weight: 500; color: var(--text); }
+  h2 { font-size: 17px; font-weight: 600; margin: 32px 0 10px; }
+  p { font-size: 14.5px; color: var(--text-mid); margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { font-size: 14.5px; color: var(--text-mid); margin-bottom: 6px; }
+  a { color: var(--mint-dark); }
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--text-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">EOLGUL LABS</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated June 2026</div>
+
+  <div class="principle">
+    <div class="label">OUR COMMITMENT</div>
+    <p>Your photos work for you, not against you. We store them so we can show you genuine progress over time. We don't train models on them, sell your data, or share it with third parties.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Eolgul Labs ("we," "us") provides an AI-powered skincare guidance app. This policy explains what we collect, how we use it, and the control you have over it. It applies to the Eolgul mobile app.</p>
+
+  <h2>What we store</h2>
+  <p>When you complete a scan, we store the three photos you take (front view, left turn, right turn) along with the scores and observations from that scan. Photos are kept in Google Firebase Storage, encrypted at rest, and scoped to your account.</p>
+  <p>We use your stored photos for one purpose only: to compare them against your future scans, so we can identify real visible differences instead of guessing at progress.</p>
+  <p>These photos are images of your face. We analyze visible skin characteristics (such as texture, tone, and clarity) to generate your scores. We do not derive facial-recognition or biometric identity templates from them, and we do not use them to identify you as an individual.</p>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>We never sell your photos or data to anyone.</li>
+    <li>We never share your photos with advertisers, data brokers, or affiliates.</li>
+    <li>We never use your photos to train AI models, ours or anyone else's.</li>
+    <li>We never view your photos as a company unless you specifically grant access for support.</li>
+  </ul>
+
+  <h2>How analysis works</h2>
+  <p>During a scan, your photos are sent over an encrypted connection to Anthropic's Claude API for analysis. Anthropic does not store these photos or use them to train their models; this is part of their API terms. Once analysis completes, your photos are saved to your private Firebase Storage account and used only for future comparisons.</p>
+
+  <h2>Service providers</h2>
+  <p>We rely on a small number of trusted service providers to operate the app:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> — authentication, database, and encrypted photo storage.</li>
+    <li><strong>Anthropic</strong> — AI analysis of your scan photos (not retained by Anthropic).</li>
+  </ul>
+  <p>These providers process data on our behalf under their own security and privacy commitments. We do not grant them the right to use your data for their own purposes.</p>
+
+  <h2>Data we don't collect</h2>
+  <p>We don't collect your contacts, your location, your other apps, your browsing data, your microphone, or your background activity. The only data we store is what you actively give us during scans and routines.</p>
+
+  <h2>Your control and your rights</h2>
+  <p>You can delete all your photos at any time from Settings. When you delete your account, we begin removing your photos and scan data immediately and complete deletion within 30 days. We don't retain shadow copies.</p>
+  <p>Depending on where you live, you may have rights to access, correct, export, or delete your personal data (for example, under the GDPR in the EU/UK or the CCPA in California). You can exercise these rights by deleting your data in-app or by contacting us at the address below.</p>
+
+  <h2>Children</h2>
+  <p>Eolgul is not directed to children under 13, and we do not knowingly collect personal data from them. If you believe a child has provided us data, contact us and we will delete it. Where local law sets a higher age of digital consent, that age applies.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change how we handle your data, we'll notify you in the app before the change takes effect. We won't change our retention or use commitments retroactively without giving you the option to delete your data first.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about your privacy or this policy? Email us at <a href="mailto:daniel_h_cha@proton.me">daniel_h_cha@proton.me</a>. We read every message.</p>
+
+  <div class="footer">© 2026 Eolgul Labs. This policy is provided for transparency and does not constitute legal advice.</div>
+</div>
+</body>
+</html>
