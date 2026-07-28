@@ -5,38 +5,157 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eolgul Labs Support</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-         max-width: 640px; margin: 0 auto; padding: 48px 24px; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 28px; margin-bottom: 4px; }
-  .sub { color: #6b7280; margin-top: 0; }
-  a { color: #2BA697; }
-  .rail { border-left: 2px solid #2BA697; padding-left: 14px; margin: 28px 0; }
+  :root {
+    --mint: #2BA697;
+    --mint-light: #E6F4F1;
+    --ink: #1A1D1C;
+    --soft: #6B7674;
+    --line: #E4E8E7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+    line-height: 1.65;
+    color: var(--ink);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 { font-size: 30px; letter-spacing: -0.4px; margin: 0 0 2px; }
+  .tagline { color: var(--soft); margin: 0 0 40px; font-size: 15px; }
+  h2 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: var(--soft);
+    margin: 48px 0 16px;
+  }
+  h3 { font-size: 16px; margin: 28px 0 6px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--mint); }
+  .rail {
+    border-left: 2px solid var(--mint);
+    padding-left: 16px;
+    margin: 0 0 8px;
+  }
+  .contact {
+    background: var(--mint-light);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 8px;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .email { font-weight: 600; font-size: 17px; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 56px 0 0; }
+  footer { color: var(--soft); font-size: 14px; margin-top: 28px; }
+  .note { color: var(--soft); font-size: 14px; }
 </style>
 </head>
 <body>
-  <h1>Eolgul Labs Support</h1>
-  <p class="sub">Skin analysis for iOS</p>
 
+  <h1>Eolgul Labs Support</h1>
+  <p class="tagline">Skin analysis for iOS. Know your skin, then treat it.</p>
+
+  <div class="contact">
+    <p class="email"><a href="mailto:eolgulLabs@proton.me">eolgulLabs@proton.me</a></p>
+    <p>Bug reports, questions, account and data requests, or anything else. We read every message and reply within 2 business days.</p>
+  </div>
+  <p class="note">Including your iPhone model and iOS version helps us answer faster.</p>
+
+  <h2>Getting started</h2>
+
+  <h3>What Eolgul does</h3>
+  <p>Eolgul takes three photos of your face, scores five zones from 0 to 100, identifies the concerns it sees, and builds a K-beauty routine for morning and evening based on what your skin actually shows.</p>
+
+  <h3>Do I need an account?</h3>
+  <p>No. You can complete a full scan and see your results and routine without signing in. Creating an account lets you keep your history across scans and restore it if you change devices. Sign in with Apple is supported.</p>
+
+  <h3>How to take a good scan</h3>
   <div class="rail">
-    <p>Questions, bug reports, or account requests:<br>
-    <a href="mailto:cha.daniel04@gmail.com">cha.daniel04@gmail.com</a></p>
-    <p>We respond within 2 business days.</p>
+    <p>Face a window or a lamp so the light comes from in front of you, not behind.</p>
+    <p>Hold the phone at eye level, roughly an arm's length away.</p>
+    <p>Remove makeup first. Eolgul reads your skin, not your foundation.</p>
+    <p>Tie hair back so your forehead and cheeks are visible.</p>
+    <p>Scan at a consistent time of day. Comparing a morning scan to a late-night one adds variation that has nothing to do with your skin.</p>
   </div>
 
-  <h2>Common questions</h2>
+  <h2>Troubleshooting</h2>
 
-  <p><strong>The camera will not take my photo.</strong><br>
-  Eolgul checks lighting and framing before each shot. Move to brighter, front-facing light and hold the phone at eye level. The capture releases once conditions are good.</p>
+  <h3>The camera will not take my photo</h3>
+  <p>Eolgul checks lighting and face position before every shot and holds the capture until both are good. This is deliberate. A photo taken in poor light produces an unreliable score. Move toward brighter, front-facing light, center your face in the guide, and hold steady. The shutter releases on its own once conditions pass.</p>
 
-  <p><strong>My score changed by only a point or two.</strong><br>
-  Changes smaller than 3 points fall within measurement noise, so Eolgul hides them rather than showing them as real progress.</p>
+  <h3>Analysis failed or timed out</h3>
+  <p>Analysis runs on our servers and usually takes 10 to 20 seconds. If it fails, check your connection and try again. A failed scan does not count against your daily limit. If it fails repeatedly, email us with the approximate time it happened so we can look at the logs.</p>
 
-  <p><strong>How many scans can I do?</strong><br>
-  Three per day.</p>
+  <h3>It says I have reached my scan limit</h3>
+  <p>Scans are limited to 3 per day per account. Skin does not change meaningfully within hours, so more frequent scanning mostly measures lighting rather than progress. The limit resets on a rolling daily basis.</p>
 
-  <p><strong>How do I delete my data?</strong><br>
-  Email the address above and your account and stored photos will be removed.</p>
+  <h3>The camera permission prompt never appeared</h3>
+  <p>Open the iOS Settings app, scroll to Eolgul, and enable Camera. If you previously declined, iOS will not ask again from inside the app.</p>
 
-  <p><a href="./">Privacy Policy</a></p>
+  <h3>My routine did not generate</h3>
+  <p>Open Settings inside the app and tap Regenerate my routine. This rebuilds your routine from your most recent scan. If it still comes back empty, email us.</p>
+
+  <h3>Sign in with Apple asks me twice</h3>
+  <p>A known issue we are working on. Completing the second prompt signs you in normally and your data is unaffected.</p>
+
+  <h2>Understanding your results</h2>
+
+  <h3>The five zones</h3>
+  <p>Forehead, T-zone, left cheek, right cheek, and chin. Skin rarely behaves the same way across the whole face, so a single overall number hides more than it tells you. Tap any zone on the face map to see what Eolgul saw there and what it recommends.</p>
+
+  <h3>Why my score barely moved</h3>
+  <p>Eolgul hides changes smaller than 3 points. Repeated scans of the same skin on the same day vary by about that much purely from lighting and angle, so a shift of 1 or 2 points is measurement noise rather than a real result. Showing it would be flattering and dishonest. Changes of 3 points or more are real enough to display.</p>
+
+  <h3>Why my whole face scored higher today</h3>
+  <p>If every zone moved up or down together, that is usually the room rather than your skin. Brighter, more even light lifts scores across the board. Scanning in a consistent spot makes your history far more useful.</p>
+
+  <h3>Scores are whole numbers</h3>
+  <p>Deliberately. Decimal places would imply a precision the measurement does not have.</p>
+
+  <h3>Changing your concerns</h3>
+  <p>The concerns Eolgul tracks for you can be edited. Open your concerns list, tap any concern to read what it is and what helps, and add or remove it. Your routine updates to match.</p>
+
+  <h2>Your routine</h2>
+
+  <h3>Where the recommendations come from</h3>
+  <p>Products are drawn from a curated K-beauty catalog and matched to the concerns detected in your scan. Every step explains why it is there, what to expect from it, and how to apply it. Tap any step to read the full detail.</p>
+
+  <h3>Pregnancy and nursing</h3>
+  <p>Eolgul includes ingredient safety filtering for pregnancy and nursing. You can turn this on during onboarding or later in Settings. When it is on, ingredients commonly avoided during pregnancy are excluded from your recommendations. This is a convenience filter and not medical clearance. Talk to your doctor or midwife about anything you put on your skin while pregnant or nursing.</p>
+
+  <h3>Can I use my own products instead?</h3>
+  <p>Yes. The routine is guidance, not a shopping list. The reasoning attached to each step tells you what job that product is doing, so you can substitute something you already own that does the same job.</p>
+
+  <h2>Account and data</h2>
+
+  <h3>What we store</h3>
+  <p>Your scan photos, your zone scores and detected concerns, your generated routine, and your account email and name if you provided them. Photos are stored so your history stays viewable.</p>
+
+  <h3>Deleting your account and data</h3>
+  <p>Email <a href="mailto:eolgulLabs@proton.me">eolgulLabs@proton.me</a> from the address on your account and we will delete your account, your stored photos, and your scan history. We confirm by email once it is done.</p>
+
+  <h3>Getting a copy of your data</h3>
+  <p>Email us and we will send you what we hold on your account.</p>
+
+  <h2>Privacy</h2>
+  <div class="rail">
+    <p>Your photos are used to generate your analysis and nothing else.</p>
+    <p>No tracking, no advertising, no sale of your data.</p>
+    <p>Full detail in the <a href="./">Privacy Policy</a>.</p>
+  </div>
+
+  <h2>Important</h2>
+  <p>Eolgul Labs is a cosmetic and educational tool. It does not diagnose, treat, or claim to treat any medical condition, and it is not a substitute for a dermatologist. Analysis text and routine recommendations are generated by AI and can be wrong. If something on your skin is painful, spreading, changing shape, bleeding, or not healing, see a doctor rather than an app.</p>
+
+  <hr>
+  <footer>
+    <p>Eolgul Labs. Built by Daniel Cha.<br>
+    <a href="mailto:eolgulLabs@proton.me">eolgulLabs@proton.me</a> &middot; <a href="./">Privacy Policy</a></p>
+  </footer>
+
 </body>
 </html>
