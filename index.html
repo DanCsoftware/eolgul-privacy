@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Privacy Policy — Eolgul Labs</title>
+<title>Privacy Policy | Eolgul Labs</title>
 <style>
   :root {
     --mint: #4ECDC4; --mint-dark: #2AB7AD; --mint-light: #F0FDFB;
@@ -24,12 +24,17 @@
     background: var(--mint-light); border-radius: 16px; padding: 20px 22px; margin-bottom: 32px;
   }
   .principle .label { font-size: 11px; font-weight: 700; letter-spacing: 0.6px; color: var(--mint-dark); margin-bottom: 8px; }
-  .principle p { margin: 0; font-size: 15px; font-weight: 500; color: var(--text); }
+  .principle p { margin: 0 0 10px; font-size: 15px; font-weight: 500; color: var(--text); }
+  .principle p:last-child { margin-bottom: 0; }
   h2 { font-size: 17px; font-weight: 600; margin: 32px 0 10px; }
+  h3 { font-size: 14.5px; font-weight: 600; margin: 20px 0 6px; }
   p { font-size: 14.5px; color: var(--text-mid); margin: 0 0 14px; }
   ul { margin: 0 0 14px; padding-left: 20px; }
   li { font-size: 14.5px; color: var(--text-mid); margin-bottom: 6px; }
   a { color: var(--mint-dark); }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 18px; font-size: 13.5px; }
+  th { text-align: left; padding: 8px 10px 8px 0; color: var(--text-soft); font-weight: 600; border-bottom: 1px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+  td { padding: 10px 10px 10px 0; color: var(--text-mid); border-bottom: 1px solid var(--border); vertical-align: top; }
   .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--text-soft); }
 </style>
 </head>
@@ -37,57 +42,112 @@
 <div class="wrap">
   <div class="brand">EOLGUL LABS</div>
   <h1>Privacy Policy</h1>
-  <div class="updated">Last updated June 2026</div>
+  <div class="updated">Last updated August 2026</div>
 
   <div class="principle">
-    <div class="label">OUR COMMITMENT</div>
-    <p>Your photos work for you, not against you. We store them so we can show you genuine progress over time. We don't train models on them, sell your data, or share it with third parties.</p>
+    <div class="label">THE SHORT VERSION</div>
+    <p>Your scan photos are sent to Anthropic, an AI company, so their Claude model can analyze your skin. That is the core of how Eolgul works, and we ask your permission in the app before it ever happens.</p>
+    <p>Nobody trains AI on your photos. We do not sell your data, show you ads, or track you across other apps.</p>
   </div>
 
   <h2>Who we are</h2>
-  <p>Eolgul Labs ("we," "us") provides an AI-powered skincare guidance app. This policy explains what we collect, how we use it, and the control you have over it. It applies to the Eolgul mobile app.</p>
+  <p>Eolgul Labs ("we," "us") provides a cosmetic skincare guidance app for iOS. This policy explains what we collect, how we collect it, every use we make of it, and who else receives it.</p>
 
-  <h2>What we store</h2>
-  <p>When you complete a scan, we store the three photos you take (front view, left turn, right turn) along with the scores and observations from that scan. Photos are kept in Google Firebase Storage, encrypted at rest, and scoped to your account.</p>
-  <p>We use your stored photos for one purpose only: to compare them against your future scans, so we can identify real visible differences instead of guessing at progress.</p>
-  <p>These photos are images of your face. We analyze visible skin characteristics (such as texture, tone, and clarity) to generate your scores. We do not derive facial-recognition or biometric identity templates from them, and we do not use them to identify you as an individual.</p>
+  <h2>What we collect and why</h2>
+
+  <table>
+    <tr>
+      <th>Data</th>
+      <th>How we collect it</th>
+      <th>What we use it for</th>
+    </tr>
+    <tr>
+      <td>Face photos (3 per scan)</td>
+      <td>Taken in the app with your camera, after you grant camera permission</td>
+      <td>Sent to Anthropic for analysis; stored in your account so later scans can be compared against them</td>
+    </tr>
+    <tr>
+      <td>Skin concerns you select</td>
+      <td>You choose them during onboarding or in Settings</td>
+      <td>Sent to Anthropic alongside your photos so the analysis addresses what you told us matters; used to target your routine</td>
+    </tr>
+    <tr>
+      <td>Scan results (zone scores, observations, detected concerns)</td>
+      <td>Generated from your photos</td>
+      <td>Shown to you, tracked over time, and used to build your routine</td>
+    </tr>
+    <tr>
+      <td>Product photos (optional)</td>
+      <td>Only if you use "Capture my routine" to photograph a product you own</td>
+      <td>Sent to Anthropic to identify the product and add it to your routine</td>
+    </tr>
+    <tr>
+      <td>Pregnancy or nursing status</td>
+      <td>You set it during onboarding or in Settings, and it is optional</td>
+      <td>Filters ingredients commonly avoided during pregnancy out of your recommendations</td>
+    </tr>
+    <tr>
+      <td>Name and email</td>
+      <td>Only if you create an account with Sign in with Apple</td>
+      <td>Identifying your account and restoring your data on a new device. Apple may give us a private relay address instead of your real email</td>
+    </tr>
+    <tr>
+      <td>An account identifier</td>
+      <td>Created automatically by Firebase when you first open the app</td>
+      <td>Keeping your data separate from everyone else's. It is never sent to Anthropic</td>
+    </tr>
+  </table>
+
+  <h2>Sharing your photos with Anthropic</h2>
+  <p>Eolgul cannot analyze your skin without an AI model, and we do not run one ourselves. When you scan, your three photos and the skin concerns you selected are sent over an encrypted connection to <strong>Anthropic PBC</strong> and processed by their Claude API.</p>
+
+  <h3>What Anthropic receives</h3>
+  <p>Your three scan photos, the skin concerns you selected, and, on repeat scans, the photos from your most recent previous scan so the model can compare them. On product lookups, the product photo you took.</p>
+
+  <h3>What Anthropic does not receive</h3>
+  <p>Your name, your email, your account identifier, and your device identifier are never sent. Anthropic receives images and skin concern labels with no information about who you are.</p>
+
+  <h3>What Anthropic does with it</h3>
+  <p>Anthropic processes the request and returns the analysis to our server. Under Anthropic's Commercial Terms, which govern our use of their API, inputs and outputs from the API are <strong>not used to train their models</strong>. Anthropic retains API inputs and outputs for a limited period for operational and safety purposes and then deletes them. Anthropic's own privacy documentation is available at <a href="https://privacy.claude.com">privacy.claude.com</a>.</p>
+
+  <h3>Equal protection</h3>
+  <p>Anthropic processes this data on our behalf as a service provider, under contractual terms that prohibit using it for their own purposes and that provide protections equivalent to those described in this policy. We do not grant them the right to sell it, advertise from it, or train on it.</p>
+
+  <h3>Your permission</h3>
+  <p>Before your first scan, Eolgul shows you a screen explaining that your photos will be sent to Anthropic and asks you to agree. If you decline, no photo is ever transmitted and no scan takes place. You can withdraw by deleting your account at any time.</p>
+
+  <h2>Where your data is stored</h2>
+  <p>Photos, scan results, and routines are stored with Google Firebase (Authentication, Cloud Firestore, and Cloud Storage), encrypted at rest and scoped to your account. Analysis runs on Google Cloud Functions. Data is processed in the United States.</p>
 
   <h2>What we never do</h2>
   <ul>
-    <li>We never sell your photos or data to anyone.</li>
-    <li>We never share your photos with advertisers, data brokers, or affiliates.</li>
-    <li>We never use your photos to train AI models, ours or anyone else's.</li>
-    <li>We never view your photos as a company unless you specifically grant access for support.</li>
+    <li>We never sell your photos or your data.</li>
+    <li>We never share your data with advertisers, data brokers, or affiliates.</li>
+    <li>We never use your photos to train AI models, ours or anyone else's, and neither does Anthropic.</li>
+    <li>We include no advertising, no analytics, and no tracking software of any kind.</li>
+    <li>We never derive facial recognition or biometric identity templates from your photos. We analyze visible skin characteristics such as texture, tone, and clarity. We do not use your photos to identify you as a person.</li>
+    <li>We do not view your photos as a company unless you specifically ask us to for support.</li>
   </ul>
 
-  <h2>How analysis works</h2>
-  <p>During a scan, your photos are sent over an encrypted connection to Anthropic's Claude API for analysis. Anthropic does not store these photos or use them to train their models; this is part of their API terms. Once analysis completes, your photos are saved to your private Firebase Storage account and used only for future comparisons.</p>
-
-  <h2>Service providers</h2>
-  <p>We rely on a small number of trusted service providers to operate the app:</p>
-  <ul>
-    <li><strong>Google Firebase</strong> — authentication, database, and encrypted photo storage.</li>
-    <li><strong>Anthropic</strong> — AI analysis of your scan photos (not retained by Anthropic).</li>
-  </ul>
-  <p>These providers process data on our behalf under their own security and privacy commitments. We do not grant them the right to use your data for their own purposes.</p>
-
-  <h2>Data we don't collect</h2>
-  <p>We don't collect your contacts, your location, your other apps, your browsing data, your microphone, or your background activity. The only data we store is what you actively give us during scans and routines.</p>
+  <h2>What we do not collect</h2>
+  <p>We do not collect your location, your contacts, your browsing history, your microphone, your other apps, or your activity outside Eolgul. Photos are stripped of camera metadata when they are processed on your device.</p>
 
   <h2>Your control and your rights</h2>
-  <p>You can delete all your photos at any time from Settings. When you delete your account, we begin removing your photos and scan data immediately and complete deletion within 30 days. We don't retain shadow copies.</p>
-  <p>Depending on where you live, you may have rights to access, correct, export, or delete your personal data (for example, under the GDPR in the EU/UK or the CCPA in California). You can exercise these rights by deleting your data in-app or by contacting us at the address below.</p>
+  <p>You can delete your account and its data from Settings inside the app, or by emailing us. When you delete your account we remove your photos, scan history, and routines. Deletion begins immediately and completes within 30 days. We keep no shadow copies.</p>
+  <p>Depending on where you live you may have rights to access, correct, export, or delete your personal data, for example under the GDPR in the EU and UK or the CCPA in California. Exercise them in the app or by emailing us.</p>
 
   <h2>Children</h2>
-  <p>Eolgul is not directed to children under 13, and we do not knowingly collect personal data from them. If you believe a child has provided us data, contact us and we will delete it. Where local law sets a higher age of digital consent, that age applies.</p>
+  <p>Eolgul is not directed to children under 13 and we do not knowingly collect data from them. If you believe a child has given us data, contact us and we will delete it. Where local law sets a higher age of digital consent, that age applies.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If we change how we handle your data, we'll notify you in the app before the change takes effect. We won't change our retention or use commitments retroactively without giving you the option to delete your data first.</p>
+  <p>If we change how we handle your data we will tell you in the app before the change takes effect. If we change what is sent to Anthropic, we will ask for your permission again. We will not change our retention or use commitments retroactively without giving you the chance to delete your data first.</p>
 
   <h2>Contact</h2>
-  <p>Questions about your privacy or this policy? Email us at <a href="mailto:daniel_h_cha@proton.me">daniel_h_cha@proton.me</a>. We read every message.</p>
+  <p>Questions about your privacy or this policy? Email <a href="mailto:eolgulLabs@proton.me">eolgulLabs@proton.me</a>. We read every message and reply within 2 business days.</p>
 
-  <div class="footer">© 2026 Eolgul Labs. This policy is provided for transparency and does not constitute legal advice.</div>
+  <div class="footer">
+    &copy; 2026 Eolgul Labs. <a href="./support.html">Support</a>
+  </div>
 </div>
 </body>
 </html>
