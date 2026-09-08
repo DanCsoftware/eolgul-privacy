@@ -42,19 +42,15 @@
 <div class="wrap">
   <div class="brand">EOLGUL LABS</div>
   <h1>Privacy Policy</h1>
-  <div class="updated">Last updated August 2026</div>
-
+  <div class="updated">Last updated September 2026</div>
   <div class="principle">
     <div class="label">THE SHORT VERSION</div>
     <p>Your scan photos are sent to Anthropic, an AI company, so their Claude model can analyze your skin. That is the core of how Eolgul works, and we ask your permission in the app before it ever happens.</p>
     <p>Nobody trains AI on your photos. We do not sell your data, show you ads, or track you across other apps.</p>
   </div>
-
   <h2>Who we are</h2>
   <p>Eolgul Labs ("we," "us") provides a cosmetic skincare guidance app for iOS. This policy explains what we collect, how we collect it, every use we make of it, and who else receives it.</p>
-
   <h2>What we collect and why</h2>
-
   <table>
     <tr>
       <th>Data</th>
@@ -64,12 +60,17 @@
     <tr>
       <td>Face photos (3 per scan)</td>
       <td>Taken in the app with your camera, after you grant camera permission</td>
-      <td>Sent to Anthropic for analysis; stored in your account so later scans can be compared against them</td>
+      <td>Measured on your device, sent to Anthropic for analysis, and stored in your account so later scans can be compared against them</td>
     </tr>
     <tr>
       <td>Skin concerns you select</td>
       <td>You choose them during onboarding or in Settings</td>
       <td>Sent to Anthropic alongside your photos so the analysis addresses what you told us matters; used to target your routine</td>
+    </tr>
+    <tr>
+      <td>Skin measurements</td>
+      <td>Calculated on your device from the photos, before anything is sent</td>
+      <td>Producing your zone scores. These are numbers such as average color and brightness per facial zone, not images</td>
     </tr>
     <tr>
       <td>Scan results (zone scores, observations, detected concerns)</td>
@@ -97,28 +98,23 @@
       <td>Keeping your data separate from everyone else's. It is never sent to Anthropic</td>
     </tr>
   </table>
-
+  <h2>What happens on your device</h2>
+  <p>Some of the analysis never leaves your phone. Before anything is sent, Eolgul measures your photos locally — color, brightness, and surface detail across five facial zones — and those measurements produce your zone scores. This processing happens entirely on your device and the results are numbers, not images.</p>
+  <p>Your photos are also re-encoded on the device before they are uploaded, which means the original camera file's metadata, including any location information your camera may have recorded, is not carried with them.</p>
   <h2>Sharing your photos with Anthropic</h2>
-  <p>Eolgul cannot analyze your skin without an AI model, and we do not run one ourselves. When you scan, your three photos and the skin concerns you selected are sent over an encrypted connection to <strong>Anthropic PBC</strong> and processed by their Claude API.</p>
-
+  <p>Eolgul's written analysis is produced by an AI model, and we do not run one ourselves. When you scan, your three photos and the skin concerns you selected are sent over an encrypted connection to <strong>Anthropic PBC</strong> and processed by their Claude API.</p>
   <h3>What Anthropic receives</h3>
   <p>Your three scan photos, the skin concerns you selected, and, on repeat scans, the photos from your most recent previous scan so the model can compare them. On product lookups, the product photo you took.</p>
-
   <h3>What Anthropic does not receive</h3>
   <p>Your name, your email, your account identifier, and your device identifier are never sent. Anthropic receives images and skin concern labels with no information about who you are.</p>
-
   <h3>What Anthropic does with it</h3>
   <p>Anthropic processes the request and returns the analysis to our server. Under Anthropic's Commercial Terms, which govern our use of their API, inputs and outputs from the API are <strong>not used to train their models</strong>. Anthropic retains API inputs and outputs for a limited period for operational and safety purposes and then deletes them. Anthropic's own privacy documentation is available at <a href="https://privacy.claude.com">privacy.claude.com</a>.</p>
-
   <h3>Equal protection</h3>
   <p>Anthropic processes this data on our behalf as a service provider, under contractual terms that prohibit using it for their own purposes and that provide protections equivalent to those described in this policy. We do not grant them the right to sell it, advertise from it, or train on it.</p>
-
   <h3>Your permission</h3>
-  <p>Before your first scan, Eolgul shows you a screen explaining that your photos will be sent to Anthropic and asks you to agree. If you decline, no photo is ever transmitted and no scan takes place. You can withdraw by deleting your account at any time.</p>
-
+  <p>Before your first scan, Eolgul shows you a screen titled "May we send your photos for analysis?" It states what is sent, who receives it, and what they do with it, and asks you to agree or decline. If you decline, no photo is ever transmitted and no scan takes place, and the rest of the app remains usable. The same screen is available any time in Settings under "How Eolgul uses AI". You can withdraw by deleting your account at any time.</p>
   <h2>Where your data is stored</h2>
   <p>Photos, scan results, and routines are stored with Google Firebase (Authentication, Cloud Firestore, and Cloud Storage), encrypted at rest and scoped to your account. Analysis runs on Google Cloud Functions. Data is processed in the United States.</p>
-
   <h2>What we never do</h2>
   <ul>
     <li>We never sell your photos or your data.</li>
@@ -128,23 +124,17 @@
     <li>We never derive facial recognition or biometric identity templates from your photos. We analyze visible skin characteristics such as texture, tone, and clarity. We do not use your photos to identify you as a person.</li>
     <li>We do not view your photos as a company unless you specifically ask us to for support.</li>
   </ul>
-
   <h2>What we do not collect</h2>
-  <p>We do not collect your location, your contacts, your browsing history, your microphone, your other apps, or your activity outside Eolgul. Photos are stripped of camera metadata when they are processed on your device.</p>
-
+  <p>We do not collect your location, your contacts, your browsing history, your microphone, your other apps, or your activity outside Eolgul.</p>
   <h2>Your control and your rights</h2>
   <p>You can delete your account and its data from Settings inside the app, or by emailing us. When you delete your account we remove your photos, scan history, and routines. Deletion begins immediately and completes within 30 days. We keep no shadow copies.</p>
   <p>Depending on where you live you may have rights to access, correct, export, or delete your personal data, for example under the GDPR in the EU and UK or the CCPA in California. Exercise them in the app or by emailing us.</p>
-
   <h2>Children</h2>
   <p>Eolgul is not directed to children under 13 and we do not knowingly collect data from them. If you believe a child has given us data, contact us and we will delete it. Where local law sets a higher age of digital consent, that age applies.</p>
-
   <h2>Changes to this policy</h2>
   <p>If we change how we handle your data we will tell you in the app before the change takes effect. If we change what is sent to Anthropic, we will ask for your permission again. We will not change our retention or use commitments retroactively without giving you the chance to delete your data first.</p>
-
   <h2>Contact</h2>
   <p>Questions about your privacy or this policy? Email <a href="mailto:daniel@eolgullabs.com">daniel@eolgullabs.com</a>. We read every message and reply within 2 business days.</p>
-
   <div class="footer">
     &copy; 2026 Eolgul Labs. <a href="./support.html">Support</a>
   </div>
