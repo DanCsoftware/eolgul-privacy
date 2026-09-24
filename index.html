@@ -116,8 +116,7 @@
   <h2>Where your data is stored</h2>
   <p>Photos, scan results, and routines are stored with Google Firebase (Authentication, Cloud Firestore, and Cloud Storage), encrypted at rest and scoped to your account. Analysis runs on Google Cloud Functions. Data is processed in the United States.</p>
   <h2>Improving the measurement</h2>
-  <p>When you scan, we also keep the numbers the app measured — readings such as redness, tone, brightness and surface texture, per facial zone — in a separate set of measurement records. These records contain the numbers and an anonymous label for the face they came from. They never contain your photos, your name, your email, or anything you typed.</p>
-  <p>We keep them because a skin scanner that cannot tell people apart would look, from the inside, exactly like one that works. Comparing readings across many different faces is the only way to know the difference, and it is what lets us correct the measurement when it is wrong.</p>
+  <p>When you scan, we also keep the numbers the app measured — readings such as redness, tone, brightness and surface texture, per facial zone — in a separate set of measurement records. These records contain the numbers and a reference to the account they came from, so we can delete them when you delete your account. They never contain your photos, your name, your email, or anything you typed.</p>  <p>We keep them because a skin scanner that cannot tell people apart would look, from the inside, exactly like one that works. Comparing readings across many different faces is the only way to know the difference, and it is what lets us correct the measurement when it is wrong.</p>
   <p>These records are stored with Google Firebase in the United States, alongside the rest of your data, and are deleted when you delete your account.</p>
   <h2>What we never do</h2>
   <ul>
