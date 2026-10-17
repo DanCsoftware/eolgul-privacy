@@ -56,84 +56,91 @@
 </head>
 <body>
   <h1>Eolgul Labs Support</h1>
-  <p class="tagline">Skin analysis for iOS. Know your skin, then treat it.</p>
+  <p class="tagline">Korean skincare routines built from your skin, your goals and what you react to.</p>
   <div class="contact">
-    <p class="email"><a href="mailto:daniel@eolgullabs.com">daniel@eolgullabs.com</a></p>
+    <p class="email"><a href="mailto:daniel_h_cha@proton.me">daniel_h_cha@proton.me</a></p>
     <p>Bug reports, questions, account and data requests, or anything else. We read every message and reply within 2 business days.</p>
   </div>
   <p class="note">Including your iPhone model and iOS version helps us answer faster.</p>
+
   <h2>Getting started</h2>
   <h3>What Eolgul does</h3>
-  <p>Eolgul takes three photos of your face, scores five zones from 0 to 100, identifies the concerns it sees, and builds a K-beauty routine for morning and evening based on what your skin actually shows.</p>
+  <p>Eolgul takes three photos of your face, measures redness and dark spots across five areas of your face on your phone, and builds a morning and evening Korean skincare routine from your skin type, your goals, how your skin reacts to products, whether you're pregnant or breastfeeding, and anything you're allergic to.</p>
   <h3>Do I need an account?</h3>
-  <p>No. You can complete a full scan and see your results and routine without signing in. Creating an account lets you keep your history across scans and restore it if you change devices. Sign in with Apple is supported.</p>
+  <p>Not to scan. You can answer the setup questions, take a scan and see your results as a guest. Your routine needs a free account, created with Sign in with Apple, because it's saved to your account and tracked over the days you use it. An account also restores your history if you change phones. There is nothing to buy.</p>
   <h3>Your photos and AI</h3>
-  <p>Eolgul analyzes your skin using Claude, an AI model made by Anthropic. Before your first scan the app asks your permission, and tells you exactly what is sent: the three photos from that scan and the skin concerns you selected. Your name, email, and account identifier are never sent with them.</p>
-  <p>If you decline, no photo leaves your phone and no scan takes place. The rest of the app still works. You can read the same explanation any time in Settings under "How Eolgul uses AI", and the full detail is in the <a href="./">Privacy Policy</a>.</p>
+  <p>Your face photos never leave your phone. The phone measures your skin itself, and only those measurements (numbers such as redness and brightness for each area, never images) and your setup answers are sent to Anthropic's Claude, which writes your results and builds your routine. Your name, email and account identifier are never sent.</p>
+  <p>Before your first scan the app asks your permission and says exactly what is sent. If you decline, nothing is sent and no scan takes place; the rest of the app still works. The same explanation is in Settings under "How Eolgul uses AI", and the full detail, including a section on face data, is in the <a href="./">Privacy Policy</a>.</p>
   <h3>How to take a good scan</h3>
   <div class="rail">
     <p>Face a window or a lamp so the light comes from in front of you, not behind.</p>
     <p>Hold the phone at eye level, roughly an arm's length away.</p>
-    <p>Keep a neutral expression. Smiling changes the skin around your eyes and mouth enough to move the reading, which is why research on selfie-based skin analysis recommends against it.</p>
+    <p>Keep a neutral expression.</p>
     <p>Remove makeup first. Eolgul reads your skin, not your foundation.</p>
     <p>Tie hair back so your forehead and cheeks are visible.</p>
-    <p>Scan at a consistent time of day. Comparing a morning scan to a late-night one adds variation that has nothing to do with your skin.</p>
+    <p>Scan in the same spot at a similar time of day. Different light is the biggest cause of a reading that moves when your skin hasn't.</p>
   </div>
+
   <h2>Troubleshooting</h2>
   <h3>The camera will not take my photo</h3>
-  <p>Eolgul checks lighting and face position before every shot and holds the capture until both are good. This is deliberate. A photo taken in poor light produces an unreliable score. Move toward brighter, front-facing light, center your face in the guide, and hold steady. The shutter releases on its own once conditions pass.</p>
+  <p>Eolgul checks lighting and face position before every shot and holds the capture until both are good. This is deliberate: a photo taken in poor light gives an unreliable reading. Move toward brighter, front-facing light, center your face in the guide, and hold steady. The shutter releases on its own once the checks pass.</p>
   <h3>My scan was rejected after the photo was taken</h3>
-  <p>Occasionally a photo passes the on-screen checks and still turns out too dark, too bright, or too uneven to measure. When that happens Eolgul tells you why and asks for another rather than producing a score it cannot stand behind. A rejected capture is not saved and does not count against your daily limit.</p>
+  <p>Occasionally a photo passes the on-screen checks and still turns out too dark, too bright or too uneven to measure. Eolgul tells you why and asks for another rather than giving a score it can't stand behind. A rejected capture doesn't count against your daily scan.</p>
   <h3>Analysis failed or timed out</h3>
-  <p>Analysis usually takes 10 to 20 seconds. Your <em>first</em> scan takes longer, because it also builds your routine from scratch, which can take a minute or two — the app shows you what it has finished while it works. If analysis fails, check your connection and try again. A failed scan does not count against your daily limit. If it fails repeatedly, email us with the approximate time it happened so we can look at the logs.</p>
-  <h3>It says I have reached my scan limit</h3>
-  <p>Scans are limited to 2 per day per account. Skin does not change meaningfully within hours, so more frequent scanning mostly measures lighting rather than progress. The limit resets on a rolling daily basis.</p>
+  <p>Analysis usually takes 10 to 20 seconds. Your first scan takes longer because it also builds your routine, which can take up to a minute; the screen shows each step as it finishes. If analysis fails, check your connection and try again. A failed scan doesn't count against your daily scan. If it keeps failing, email us with the approximate time so we can look into it.</p>
+  <h3>It says I've already scanned today</h3>
+  <p>Eolgul allows one scan a day. Skin doesn't change meaningfully within hours, so scanning more often mostly measures the light in the room. The limit resets once a day at midnight UTC, which is late afternoon in the United States.</p>
   <h3>The camera permission prompt never appeared</h3>
-  <p>Open the iOS Settings app, scroll to Eolgul, and enable Camera. If you previously declined, iOS will not ask again from inside the app.</p>
+  <p>If you declined camera access before, iOS won't ask again from inside the app. Tap "Open Settings" on the scan screen, or open the iOS Settings app, scroll to Eolgul, and turn on Camera.</p>
   <h3>My routine did not generate</h3>
-  <p>Open Settings inside the app and tap Regenerate my routine. This rebuilds your routine from your most recent scan. If it still comes back empty, email us.</p>
-  <h3>Sign in with Apple asks me twice</h3>
-  <p>A known issue we are working on. Completing the second prompt signs you in normally and your data is unaffected.</p>
+  <p>The building screen tells you if your routine didn't build. Open Settings inside the app and tap "Regenerate my routine", which rebuilds it from your latest scan. If it still comes back empty, email us.</p>
+  <h3>Deleting my account opened a Sign in with Apple screen</h3>
+  <p>That's expected. Apple asks you to confirm once so Eolgul can be removed from your Sign in with Apple list as part of the deletion. If you close that screen, nothing is deleted.</p>
+
   <h2>Understanding your results</h2>
-  <h3>The five zones</h3>
-  <p>Forehead, T-zone, left cheek, right cheek, and chin. Skin rarely behaves the same way across the whole face, so a single overall number hides more than it tells you. Tap any zone on the face map to see what Eolgul saw there and what it recommends.</p>
+  <h3>The five areas</h3>
+  <p>Forehead, nose, chin, left cheek and right cheek. Skin rarely behaves the same way across the whole face, so a single overall number hides more than it tells you. Tap any area on the face map to see its readings.</p>
+  <h3>What the scan measures</h3>
+  <p>Redness and dark spots, scored in each area and compared with your own earlier scans, never with anyone else's face. A dark-circle reading is shown, but it isn't compared or counted yet, because it doesn't hold steady enough under different light. The scan doesn't measure oiliness, pores, fine lines, texture or dullness. If you tell us about those, your routine still takes them into account.</p>
   <h3>Why my score barely moved</h3>
-  <p>Eolgul only calls a change a direction — improving or declining — when it is at least 4 points. Repeated scans of the same skin on the same day vary by roughly that much from lighting and angle alone, so anything smaller is measurement noise rather than a result. Your score is always shown. What we hold back is the claim that it means something.</p>
-  <h3>Why my whole face scored higher today</h3>
-  <p>If every zone moved up or down together, that is usually the room rather than your skin. Brighter, more even light lifts scores across the board. Scanning in a consistent spot makes your history far more useful.</p>
-  <h3>Scores are whole numbers</h3>
-  <p>Deliberately. Decimal places would imply a precision the measurement does not have.</p>
-  <h3>Changing your concerns</h3>
-  <p>The concerns Eolgul tracks for you can be edited. Open your concerns list, tap any concern to read what it is and what helps, and add or remove it. Your routine updates to match.</p>
-  <h3>Which concerns get a score</h3>
-  <p>Not all of them, and we would rather say so. Redness, pigmentation, dark circles, dullness, and oiliness are measured from your photos and scored per zone. The others — including sensitivity, barrier damage, and how long marks linger on your skin — describe how your skin behaves over time rather than how it looks in a single frame. A camera cannot see them. You tell us instead, and we use them to shape which products your routine recommends.</p>
+  <p>Eolgul only calls a change a direction when it's bigger than the scan's own margin of error, and only once you have scans on at least three different days. Repeated scans of the same skin vary a little from light and angle alone, so a small change is shown but not called progress. If your skin hasn't changed, Eolgul says so.</p>
+  <h3>Why my whole face scored differently today</h3>
+  <p>If every area moved up or down together, that's usually the room rather than your skin. Brighter, more even light shifts readings across the board. Scanning in a consistent spot makes your history far more useful.</p>
+  <h3>Changing what you told us</h3>
+  <p>Open Settings, then "Your skin", to change your skin type answers, goals and reactions. Pregnancy and breastfeeding, and allergies and sensitivities, have their own rows in Settings.</p>
+
   <h2>Your routine</h2>
   <h3>Where the recommendations come from</h3>
-  <p>Products are drawn from a curated K-beauty catalog and matched to the concerns detected in your scan. Every step explains why it is there, what to expect from it, and how to apply it. Tap any step to read the full detail.</p>
-  <h3>Pregnancy and nursing</h3>
-  <p>Eolgul includes ingredient safety filtering for pregnancy and nursing. You can turn this on during onboarding or later in Settings. When it is on, ingredients commonly avoided during pregnancy are excluded from your recommendations. This is a convenience filter and not medical clearance. Talk to your doctor or midwife about anything you put on your skin while pregnant or nursing.</p>
+  <p>Products come from a curated Korean skincare catalog. Your routine is chosen for your goals and skin type, with anything matching your allergies left out, and every step explains what the product does, why it was picked for you and how to use it. Products are named only; Eolgul doesn't sell them or link to stores.</p>
+  <h3>Pregnancy and breastfeeding</h3>
+  <p>If you tell us you're pregnant or breastfeeding, products containing retinoids, hydroquinone, arbutin, strong salicylic acid or chemical sunscreen filters are left out of your routine. This is a filter, not medical clearance. Talk to your doctor or midwife about anything you put on your skin while pregnant or breastfeeding.</p>
+  <h3>Allergies</h3>
+  <p>Describe your allergies in your own words. Eolgul matches them to the names ingredients are listed under and leaves out every product that contains them, along with any product whose full ingredient list we couldn't check.</p>
   <h3>Can I use my own products instead?</h3>
-  <p>Yes. The routine is guidance, not a shopping list. The reasoning attached to each step tells you what job that product is doing, so you can substitute something you already own that does the same job.</p>
+  <p>Yes. "Capture my routine" lets you photograph products you already own, and Eolgul grades the routine you use and suggests changes where something doesn't suit you. Product photos are sent off the phone so the product can be identified. Face photos never are.</p>
+
   <h2>Account and data</h2>
   <h3>What we store</h3>
-  <p>Your scan photos, your zone scores and detected concerns, your generated routine, and your account email and name if you provided them. Photos are stored so your history stays viewable.</p>
+  <p>Your scan scores and skin measurements (numbers, never images), your setup answers, your routine and the steps you check off, your iPhone model, and your name and email if you signed in with Apple. Face photos stay on your phone, kept for the period you choose in Settings under "Keep scan photos".</p>
   <h3>Deleting your account and data</h3>
-  <p>Open Settings inside the app and tap Delete account. This permanently removes your scans, your stored photos, your routine, and your account. You can also email <a href="mailto:daniel@eolgullabs.com">daniel@eolgullabs.com</a> from the address on your account if you would rather we did it, and we will confirm by email once it is done.</p>
+  <p>Open Settings inside the app and tap Delete account. This removes the photos and data on your phone at once, and your scores, answers, routine and measurement records from our servers. You can also email us from the address on your account if you'd rather we did it, and we'll confirm once it's done. If you never created an account, delete the app and email us to remove what was stored for your guest session.</p>
   <h3>Getting a copy of your data</h3>
-  <p>Email us and we will send you what we hold on your account.</p>
+  <p>Email us and we'll send you what we hold on your account.</p>
+
   <h2>Privacy</h2>
   <div class="rail">
-    <p>Your photos are used to generate your analysis and nothing else.</p>
-    <p>Your three scan photos and selected concerns are sent to Anthropic for AI analysis, only after you agree in the app.</p>
+    <p>Face photos stay on your phone. Only skin measurements and your answers are sent, to Anthropic, and only after you agree in the app.</p>
+    <p>Nobody trains AI on your data. Anthropic deletes what we send within 30 days.</p>
     <p>No tracking, no advertising, no sale of your data.</p>
     <p>Full detail in the <a href="./">Privacy Policy</a>.</p>
   </div>
+
   <h2>Important</h2>
-  <p>Eolgul Labs is a cosmetic and educational tool. It does not diagnose, treat, or claim to treat any medical condition, and it is not a substitute for a dermatologist. Analysis text and routine recommendations are generated by AI and can be wrong. If something on your skin is painful, spreading, changing shape, bleeding, or not healing, see a doctor rather than an app.</p>
+  <p>Eolgul Labs is a cosmetic and educational tool. It doesn't diagnose, treat or claim to treat any medical condition, and it isn't a substitute for a dermatologist. Results and routine recommendations are written by AI and can be wrong. If something on your skin is painful, spreading, changing shape, bleeding or not healing, see a doctor rather than an app.</p>
   <hr>
   <footer>
     <p>Eolgul Labs. Built by Daniel Cha.<br>
-    <a href="mailto:daniel@eolgullabs.com">daniel@eolgullabs.com</a> &middot; <a href="./">Privacy Policy</a></p>
+    <a href="mailto:daniel_h_cha@proton.me">daniel_h_cha@proton.me</a> &middot; <a href="./">Privacy Policy</a></p>
   </footer>
 </body>
 </html>
