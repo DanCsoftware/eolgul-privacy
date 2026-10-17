@@ -64,7 +64,7 @@
     <tr>
       <td>Face photos (3 per scan)</td>
       <td>Taken in the app with your camera, after you grant camera permission</td>
-      <td>Measured on your phone. The photos stay on your phone so you can look back at them; they are never uploaded to our servers or sent to Anthropic. You choose how long they are kept in Settings, and your first scan's photos are always kept. Deleting the app removes them</td>
+      <td>Measured on your phone. The photos stay on your phone so you can look back at them; they are never uploaded to our servers or sent to Anthropic. You choose how long they are kept in Settings, and your first scan's photos are kept until you delete them. Deleting your account or the app removes them. See "Face data" below</td>
     </tr>
     <tr>
       <td>Skin measurements</td>
@@ -123,8 +123,16 @@
     </tr>
   </table></div>
 
-  <h2>What happens on your phone</h2>
-  <p>The scan itself runs on your phone. Eolgul measures your photos locally (colour, brightness and surface detail across five facial zones) and those measurements produce your scores. The photos are never uploaded. We do not derive facial-recognition or biometric identity templates, and we do not use any of this to identify you as a person.</p>
+  <h2>Face data</h2>
+  <h3>What face data the app collects</h3>
+  <p>Eolgul takes three photos of your face for each scan: one from the front and one of each cheek. While you line up a photo, the phone finds your face in the camera view to check framing and angle, and in each photo it finds your eyes, nose and mouth so it knows where your forehead, nose, chin and cheeks are. This face detection uses Apple's and Google's on-device frameworks and runs entirely on your phone; the images are not sent to Apple or Google. From the five skin areas it then calculates skin measurements: numbers such as redness, tone, brightness and surface texture for each area.</p>
+  <h3>How it is used</h3>
+  <p>The face positions are used only on your phone, to place and check the five measurement areas in each photo. They are not saved to our servers, not sent to Anthropic or anyone else, and never used to recognise you, to identify you, or to create a facial-recognition or biometric template. The skin measurements produce your scores, are compared with your own earlier scans to show change, and are used to write your results and build your routine.</p>
+  <h3>Where it is stored and how long it is kept</h3>
+  <p>Face photos are stored only on your phone, in the app's private storage. They are never uploaded to our servers and never sent to Anthropic or any other third party. They are kept for the period you choose in Settings (30 days, 90 days, 1 year, or until you delete them; 1 year unless you change it), except your first scan's photos, which are kept as your starting point until you delete them. You can delete the photos from any scan at any time, and deleting your account or the app removes all of them.</p>
+  <p>Only the skin measurements leave your phone. They contain no images and no face positions, and cannot be turned back into a picture of your face. They are stored with Google Firebase in the United States, linked to your account, and kept until you delete your account, when they are removed within 30 days.</p>
+  <h3>Sharing</h3>
+  <p>Face photos and face positions are not shared with anyone. The skin measurements are sent to Anthropic, which writes your results (see "Sharing with Anthropic" below); Anthropic does not use them for training and deletes them within 30 days. We do not sell face data or share it with advertisers, data brokers or anyone else.</p>
 
   <h2>Sharing with Anthropic</h2>
   <p>Eolgul's written results and routines are produced by an AI model, and we do not run one ourselves. When you scan, your measurements and your answers are sent over an encrypted connection to <strong>Anthropic PBC</strong> and processed by their Claude API.</p>
